@@ -235,6 +235,7 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_subtract"
                     app:backgroundTint="@color/background_fab"
+                    app:borderWidth="2dp"
                     app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -243,6 +244,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_plus"
                     app:backgroundTint="@color/background_fab"
+                    app:borderWidth="2dp"
                     app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>

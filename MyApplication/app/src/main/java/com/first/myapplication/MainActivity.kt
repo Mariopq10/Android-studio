@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import calculadoraIMC.CalculadoraIMCActivity
 import com.first.myapplication.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import todoapp.TodoActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,12 @@ class MainActivity : AppCompatActivity() {
             var contenidoIMC : Bundle=Bundle()
             contenedor2.putExtras(contenidoIMC)
             this.startActivity(contenedor2)
+        }
+        binding.btnTodo.setOnClickListener{
+            var ventanaTodo : Intent = Intent( this, TodoActivity::class.java)
+            var contenidoTodo : Bundle=Bundle()
+            ventanaTodo.putExtras(contenidoTodo)
+            this.startActivity(ventanaTodo)
         }
 
     }

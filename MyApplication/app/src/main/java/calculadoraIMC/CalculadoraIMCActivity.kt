@@ -135,7 +135,6 @@ class CalculadoraIMCActivity : AppCompatActivity() {
         return ContextCompat.getColor(this, colorReference)
     }
 
-
     private fun initUI() {
         seleccionColorGenero()
         setWeight()
