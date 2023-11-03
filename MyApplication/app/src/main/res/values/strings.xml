@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">AndroidMaster</string>
+    <string name='nombreVentana2'>Nombre</string>
+    <string name='contrasenaVentana2'>Contrasena</string>
+    <string name='headVentana2'>Bienvenido a mi aplicacion</string>
+    <string name='exitVentana2'>Salir</string>
 
     <!--IMC APP-->
     <string name="male">Hombre</string>

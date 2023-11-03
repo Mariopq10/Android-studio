@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name='nombreVentana2'>Name</string>
+    <string name='contrasenaVentana2'>Password</string>
+    <string name='headVentana2'>Welcome to my aplication</string>
+    <string name='exitVentana2'>Exit</string>
+
+</resources>

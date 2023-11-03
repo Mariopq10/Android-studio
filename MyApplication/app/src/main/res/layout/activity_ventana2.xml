@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center|center_horizontal|center_vertical"
-            android:text="Bienvenido a mi aplicación" />
+            android:text="@string/headVentana2" />
 
         <EditText
             android:id="@+id/labelNombre"
@@ -29,7 +29,7 @@
             android:layout_gravity="center_horizontal"
             android:ems="10"
             android:gravity="center"
-            android:hint="Nombre"
+            android:hint="@string/nombreVentana2"
             android:inputType="text"
             android:minHeight="48dp"
             tools:ignore="VisualLintTextFieldSize" />
@@ -42,7 +42,7 @@
             android:backgroundTint="#121111"
             android:ems="10"
             android:gravity="center"
-            android:hint="Contraseña"
+            android:hint="@string/contrasenaVentana2"
             android:inputType="textPassword"
             android:minHeight="48dp"
             tools:ignore="VisualLintTextFieldSize" />
@@ -57,7 +57,7 @@
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="54dp"
         android:backgroundTint="@color/black"
-        android:text="Salir"
+        android:text="@string/exitVentana2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
