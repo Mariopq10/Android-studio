@@ -3,6 +3,7 @@ package com.first.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import calculadoraIMC.CalculadoraIMCActivity
 import com.first.myapplication.databinding.ActivityMainBinding
@@ -17,12 +18,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         var infoAcerca = "Esto es un Snackbar de informacion"
-        val snackbarInicio : Button =findViewById(R.id.acercaDe)
+        /*val snackbarInicio : Button =findViewById(R.id.acercaDe)
         binding.acercaDe.setOnClickListener{ view->
             Snackbar.make(view,infoAcerca,Snackbar.LENGTH_LONG)
                 .setAction("Action",null)
                 .show()
+        }*/
+        var toastInicio : Button = findViewById(R.id.acercaDe)
+        binding.acercaDe.setOnClickListener{
+            Toast.makeText(this,infoAcerca,Toast.LENGTH_SHORT).show()
         }
+
         binding.botonInicio.setOnClickListener {
             var contenedor : Intent = Intent(this,Ventana2::class.java)
             var contenido : Bundle = Bundle()

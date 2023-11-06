@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cine.mpq</string>
+    <string name="nombreMario">Mario</string>
+    <string name="webButton">Ir al sitio Web</string>
+    <string name="supportButton">Obtener Soporte</string>
+    <string name="exitButton">Salir</string>
+    <string name ="infoToast">Esto es un Toast de informacion</string>
+</resources>

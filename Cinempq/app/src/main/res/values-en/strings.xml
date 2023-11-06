@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cine.mpq</string>
+    <string name="nombreMario">Mario</string>
+    <string name="webButton">Go to Website</string>
+    <string name="supportButton">Support</string>
+    <string name="exitButton">Exit</string>
+    <string name ="infoToast">This is an information toast</string>
+
+</resources>
