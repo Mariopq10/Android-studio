@@ -6,5 +6,6 @@
     <string name="supportButton">Support</string>
     <string name="exitButton">Exit</string>
     <string name ="infoToast">This is an information toast</string>
+    <string name="alarm">Alarm</string>
 
 </resources>
