@@ -6,4 +6,7 @@
     <string name="exitButton">Salir</string>
     <string name="infoToast">Esto es un Toast de informacion</string>
     <string name="alarm">Alarma</string>
+    <string name="verPeliculaA">Ver pelicula A</string>
+    <string name="verPeliculaB">Ver pelicula b</string>
+    <string name="acercaDe">Acerca de</string>
 </resources>
