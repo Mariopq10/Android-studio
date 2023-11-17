@@ -9,4 +9,11 @@
     <string name="verPeliculaA">Ver pelicula A</string>
     <string name="verPeliculaB">Ver pelicula b</string>
     <string name="acercaDe">Acerca de</string>
+    <string name="verPeliculaRelacionada">Ver pelicula Relacionada</string>
+    <string name="editarPelicula">Editar Pelicula</string>
+    <string name="volver">Volver</string>
+    <string name="guardarEdit">Guardar</string>
+    <string name="cancelarEdit">Cancelar</string>
+
+
 </resources>

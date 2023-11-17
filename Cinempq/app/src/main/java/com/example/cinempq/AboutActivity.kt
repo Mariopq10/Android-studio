@@ -38,7 +38,8 @@ class AboutActivity : AppCompatActivity() {
             startActivity(intent)
         }
         var toastButton3 : Button = findViewById(R.id.exitButton)
-        binding.exitButton.setOnClickListener{finish()
+        binding.exitButton.setOnClickListener{
+            finish()
         }
 
     }
