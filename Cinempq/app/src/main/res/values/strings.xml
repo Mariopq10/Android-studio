@@ -14,6 +14,12 @@
     <string name="volver">Volver</string>
     <string name="guardarEdit">Guardar</string>
     <string name="cancelarEdit">Cancelar</string>
+    <string name="peliculaA">Pelicula A</string>
+    <string name="peliculaB">Pelicula B</string>
+    <string name="resultOk">Operacion exitosa</string>
+    <string name="resultFail">Operacion cancelada</string>
+
+
 
 
 </resources>

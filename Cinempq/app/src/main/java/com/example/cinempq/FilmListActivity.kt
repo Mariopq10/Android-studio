@@ -6,31 +6,41 @@ import android.os.Bundle
 import android.widget.Button
 
 class FilmListActivity : AppCompatActivity() {
+
+    companion object datosPelicula{
+        val nombrePelicula = ""
+    }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film_list)
 
         val buttonFilmListA : Button = findViewById(R.id.filmAButton)
         buttonFilmListA.setOnClickListener{
-            var intent = Intent(this,FilmDataActivity::class.java)
+            val intent = Intent(this,FilmDataActivity::class.java)
+
+            intent.putExtra("nombrePelicula",getString(R.string.peliculaA))
 
             startActivity(intent)
         }
 
         val buttonFilmListB : Button = findViewById(R.id.filmBButton)
         buttonFilmListB.setOnClickListener{
-            var intent2 = Intent(this,FilmDataActivity::class.java)
+            val intent = Intent(this,FilmDataActivity::class.java)
+            intent.putExtra("nombrePelicula",getString(R.string.peliculaB))
 
-            startActivity(intent2)
+            startActivity(intent)
         }
 
 
 
         val buttonInfo : Button = findViewById(R.id.showInfoButton)
         buttonInfo.setOnClickListener{
-            var intent3 = Intent(this,AboutActivity::class.java)
+            val intent = Intent(this,AboutActivity::class.java)
 
-            startActivity(intent3)
+            startActivity(intent)
         }
 
 

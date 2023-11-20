@@ -6,31 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".FilmEditActivity">
 
-    <TextView
-        android:id="@+id/editTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/cancelEditButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
         android:text="@string/cancelarEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/saveEditButton"
-        tools:layout_editor_absoluteY="597dp" />
+        app:layout_constraintStart_toEndOf="@+id/saveEditButton" />
 
     <Button
         android:id="@+id/saveEditButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
         android:text="@string/guardarEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cancelEditButton"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="597dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

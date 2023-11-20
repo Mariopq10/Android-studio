@@ -10,5 +10,14 @@
     <string name="verPeliculaA">Play Film A</string>
     <string name="verPeliculaB">Play Film B</string>
     <string name="acercaDe">Show info</string>
+    <string name="verPeliculaRelacionada">Show related movie</string>
+    <string name="editarPelicula">Edit Film</string>
+    <string name="volver">Return</string>
+    <string name="guardarEdit">Save</string>
+    <string name="cancelarEdit">Cancel</string>
+    <string name="peliculaA">Film A</string>
+    <string name="peliculaB">Film B</string>
+    <string name="resultOk">Operation done</string>
+    <string name="resultFail">Operation canceled</string>
 
 </resources>
