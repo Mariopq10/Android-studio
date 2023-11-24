@@ -9,6 +9,11 @@ class FilmListActivity : AppCompatActivity() {
 
     companion object datosPelicula{
         val nombrePelicula = ""
+        val directorPelicula =""
+        val anoPelicula=""
+        val cartelPelicula=""
+        val formatoPelicula=""
+        val enlaceIMBD=""
     }
 
 
@@ -20,8 +25,11 @@ class FilmListActivity : AppCompatActivity() {
         val buttonFilmListA : Button = findViewById(R.id.filmAButton)
         buttonFilmListA.setOnClickListener{
             val intent = Intent(this,FilmDataActivity::class.java)
-
+            intent.putExtra("directorPelicula",getString(R.string.directorPeliculaA))
             intent.putExtra("nombrePelicula",getString(R.string.peliculaA))
+            intent.putExtra("anoPelicula","1995")
+            intent.putExtra("cartelPelicula",R.drawable.toystory)
+            intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaA))
 
             startActivity(intent)
         }
@@ -29,7 +37,11 @@ class FilmListActivity : AppCompatActivity() {
         val buttonFilmListB : Button = findViewById(R.id.filmBButton)
         buttonFilmListB.setOnClickListener{
             val intent = Intent(this,FilmDataActivity::class.java)
+            intent.putExtra("directorPelicula",getString(R.string.directorPeliculaB))
             intent.putExtra("nombrePelicula",getString(R.string.peliculaB))
+            intent.putExtra("anoPelicula","1972")
+            intent.putExtra("cartelPelicula",R.drawable.godfather)
+            intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaB))
 
             startActivity(intent)
         }

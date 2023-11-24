@@ -2,6 +2,7 @@ package com.example.cinempq
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,11 @@ class FilmDataActivity : AppCompatActivity() {
 
     companion object datosPelicula{
         val nombrePelicula = ""
+        val directorPelicula =""
+        val anoPelicula=""
+        val cartelPelicula=""
+        val formatoPelicula=""
+        val enlaceIMBD=""
     }
 
     private val resultadoOperacion =
@@ -31,15 +37,24 @@ class FilmDataActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film_data)
 
-        val pelicula = findViewById<TextView>(R.id.tituloPelicula)
-        pelicula.text = intent.getStringExtra("nombrePelicula")
+        val tituloPelicula = findViewById<TextView>(R.id.tituloPelicula)
+        tituloPelicula.text = intent.getStringExtra("nombrePelicula")
+        val directorPelicula = findViewById<TextView>(R.id.directorDefinicion)
+        directorPelicula.text = intent.getStringExtra("directorPelicula")
+        val anoPelicula = findViewById<TextView>(R.id.anoDefinicion)
+        anoPelicula.text = intent.getStringExtra("anoPelicula")
+        //val cartelPelicula = findViewById<TextView>(R.id.imageView)
+        //cartelPelicula.text = intent.getStringExtra("directorPelicula")
+        val formatoPelicula = findViewById<TextView>(R.id.formatoPelicula)
+        formatoPelicula.text = intent.getStringExtra("formatoPelicula")
 
-        val buttonFilmRelation : Button = findViewById(R.id.filmRelButton)
-        buttonFilmRelation.setOnClickListener{
 
-            val intentRelation = Intent(this,FilmDataActivity::class.java)
-            intentRelation.putExtra("nombrePelicula",intent.getStringExtra("nombrePelicula"))
-            startActivity(intentRelation)
+        val buttonLinkIMDB : Button = findViewById(R.id.iMDBButton)
+        buttonLinkIMDB.setOnClickListener{
+
+            //val uri = Uri.parse(getString(R.string.))
+            // val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
         }
 
         val buttonFilmEdit : Button = findViewById(R.id.editFilmButton)

@@ -14,12 +14,18 @@
     <string name="volver">Volver</string>
     <string name="guardarEdit">Guardar</string>
     <string name="cancelarEdit">Cancelar</string>
-    <string name="peliculaA">Pelicula A</string>
-    <string name="peliculaB">Pelicula B</string>
+    <string name="botonIMDB">Ver en IMDB</string>
+    <string name="textViewDirector">Director</string>
+    <string name="textViewAno">Año</string>
+    <string name="peliculaA">Toy Story</string>
+    <string name="peliculaB">The Godfather</string>
     <string name="resultOk">Operacion exitosa</string>
     <string name="resultFail">Operacion cancelada</string>
-
-
+    <string name="directorPeliculaA">Disney</string>
+    <string name="directorPeliculaB">Francis Ford Coppola</string>
+    <string name="formatoPeliculaA">Animacion</string>
+    <string name="formatoPeliculaB">Drama, Mafia</string>
+    <string name="enlaceIMDBA">https://www.imdb.com/title/tt0114709/</string>
 
 
 </resources>

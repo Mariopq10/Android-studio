@@ -7,16 +7,6 @@
     tools:context=".FilmDataActivity">
 
     <Button
-        android:id="@+id/filmRelButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/verPeliculaRelacionada"
-        app:layout_constraintBottom_toTopOf="@+id/editFilmButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
-
-    <Button
         android:id="@+id/editFilmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +14,7 @@
         app:layout_constraintBottom_toTopOf="@+id/backDataButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filmRelButton" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
         android:id="@+id/backDataButton"
@@ -37,22 +27,103 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFilmButton" />
 
-    <TextView
-        android:id="@+id/tituloPelicula"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/filmRelButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="83dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/toystory" />
+
+    <TextView
+        android:id="@+id/tituloPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tituloDirector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloDirector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewDirector"
+        app:layout_constraintBottom_toTopOf="@+id/tituloAno"
+        app:layout_constraintEnd_toStartOf="@+id/directorDefinicion"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPelicula" />
+
+    <TextView
+        android:id="@+id/directorDefinicion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/anoDefinicion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tituloDirector"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPelicula" />
+
+    <TextView
+        android:id="@+id/tituloAno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewAno"
+        app:layout_constraintBottom_toTopOf="@+id/formatoPelicula"
+        app:layout_constraintEnd_toStartOf="@+id/anoDefinicion"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/directorDefinicion" />
+
+    <TextView
+        android:id="@+id/anoDefinicion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/formatoPelicula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tituloAno"
+        app:layout_constraintTop_toBottomOf="@+id/directorDefinicion" />
+
+    <TextView
+        android:id="@+id/formatoPelicula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/iMDBButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tituloAno" />
+
+    <Button
+        android:id="@+id/iMDBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonIMDB"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
