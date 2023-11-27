@@ -16,17 +16,16 @@
     <string name="guardarEdit">Save</string>
     <string name="cancelarEdit">Cancel</string>
     <string name="botonIMDB">Show in IMDB</string>
-
     <string name="peliculaA">Toy Story</string>
     <string name="peliculaB">The Godfather</string>
     <string name="resultOk">Operation done</string>
     <string name="resultFail">Operation canceled</string>
-    <string name="directorPeliculaA">Disney</string>
+    <string name="directorPeliculaA">John Lasseter</string>
     <string name="directorPeliculaB">Francis Ford Coppola</string>
-    <string name="formatoPeliculaA">Animation</string>
+    <string name="formatoPeliculaA">Animation, Disney.</string>
     <string name="formatoPeliculaB">Drama, Mafia</string>
-    <string name="enlaceIMDBA">https://www.imdb.com/title/tt0114709/</string>
     <string name="textViewDirector">Director</string>
     <string name="textViewAno">Year</string>
+    <string name="hintNotas">Comments...</string>
 
 </resources>

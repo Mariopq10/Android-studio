@@ -21,11 +21,11 @@
     <string name="peliculaB">The Godfather</string>
     <string name="resultOk">Operacion exitosa</string>
     <string name="resultFail">Operacion cancelada</string>
-    <string name="directorPeliculaA">Disney</string>
+    <string name="directorPeliculaA">John Lasseter</string>
     <string name="directorPeliculaB">Francis Ford Coppola</string>
-    <string name="formatoPeliculaA">Animacion</string>
+    <string name="formatoPeliculaA">Animacion, Disney.</string>
     <string name="formatoPeliculaB">Drama, Mafia</string>
-    <string name="enlaceIMDBA">https://www.imdb.com/title/tt0114709/</string>
+    <string name="hintNotas">Notas...</string>
 
 
 </resources>

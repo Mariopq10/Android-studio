@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -43,17 +44,18 @@ class FilmDataActivity : AppCompatActivity() {
         directorPelicula.text = intent.getStringExtra("directorPelicula")
         val anoPelicula = findViewById<TextView>(R.id.anoDefinicion)
         anoPelicula.text = intent.getStringExtra("anoPelicula")
-        //val cartelPelicula = findViewById<TextView>(R.id.imageView)
-        //cartelPelicula.text = intent.getStringExtra("directorPelicula")
+        val cartelPelicula = findViewById<ImageView>(R.id.imageView)
+        cartelPelicula.setImageResource(intent.getIntExtra("cartelPelicula",0))
         val formatoPelicula = findViewById<TextView>(R.id.formatoPelicula)
         formatoPelicula.text = intent.getStringExtra("formatoPelicula")
+        val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
 
 
         val buttonLinkIMDB : Button = findViewById(R.id.iMDBButton)
         buttonLinkIMDB.setOnClickListener{
 
-            //val uri = Uri.parse(getString(R.string.))
-            // val intent = Intent(Intent.ACTION_VIEW, uri)
+            val uri = Uri.parse(enlaceIMDB)
+            val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
 

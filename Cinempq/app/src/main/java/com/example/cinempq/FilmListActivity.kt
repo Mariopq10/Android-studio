@@ -30,6 +30,7 @@ class FilmListActivity : AppCompatActivity() {
             intent.putExtra("anoPelicula","1995")
             intent.putExtra("cartelPelicula",R.drawable.toystory)
             intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaA))
+            intent.putExtra("enlaceIMDB","https://www.imdb.com/title/tt0114709/")
 
             startActivity(intent)
         }
@@ -42,6 +43,7 @@ class FilmListActivity : AppCompatActivity() {
             intent.putExtra("anoPelicula","1972")
             intent.putExtra("cartelPelicula",R.drawable.godfather)
             intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaB))
+            intent.putExtra("enlaceIMDB","https://www.imdb.com/title/tt0068646/")
 
             startActivity(intent)
         }
