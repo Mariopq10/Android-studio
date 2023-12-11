@@ -27,5 +27,10 @@
     <string name="textViewDirector">Director</string>
     <string name="textViewAno">Year</string>
     <string name="hintNotas">Comments...</string>
+    <string name="hintTitulo">Film Tittle</string>
+    <string name="hintDirector">Director\'s name</string>
+    <string name="hintAno">Year</string>
+    <string name="hintEnlace">IMDB link</string>
+    <string name="hintComentarios">Comments...</string>
 
 </resources>

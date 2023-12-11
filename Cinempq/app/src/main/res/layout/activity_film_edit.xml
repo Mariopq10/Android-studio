@@ -25,4 +25,94 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cancelEditButton"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cancelEditButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagenEdit"
+                android:layout_width="99dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <Button
+                android:id="@+id/buttonTomarFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/buttonSeleccionImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tituloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintTitulo"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/directorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintDirector"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/anoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintAno"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/enlaceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintEnlace"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/spinnerGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerFormato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/comentarioEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintComentarios"
+            android:inputType="text" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

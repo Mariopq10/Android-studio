@@ -26,6 +26,12 @@
     <string name="formatoPeliculaA">Animacion, Disney.</string>
     <string name="formatoPeliculaB">Drama, Mafia</string>
     <string name="hintNotas">Notas...</string>
+    <string name="hintTitulo">Titulo de la pelicula</string>
+    <string name="hintDirector">Nombre del director</string>
+    <string name="hintAno">Año</string>
+    <string name="hintEnlace">Enlace a IMDB</string>
+    <string name="hintComentarios">Comentarios</string>
+
 
 
 </resources>
