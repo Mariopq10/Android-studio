@@ -53,7 +53,6 @@ class FilmDataActivity : AppCompatActivity() {
 
         val buttonLinkIMDB : Button = findViewById(R.id.iMDBButton)
         buttonLinkIMDB.setOnClickListener{
-
             val uri = Uri.parse(enlaceIMDB)
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)

@@ -32,5 +32,12 @@
     <string name="hintAno">Year</string>
     <string name="hintEnlace">IMDB link</string>
     <string name="hintComentarios">Comments...</string>
+    <string name="action">Action</string>
+    <string name="Scifi">Sci-fi</string>
+    <string name="drama">Drama</string>
+    <string name="comedia">Comedy</string>
+    <string name="Terror">Terror</string>
+    <string name="capturaFoto">Take a photo</string>
+    <string name="seleccionaImagen">Select picture</string>
 
 </resources>

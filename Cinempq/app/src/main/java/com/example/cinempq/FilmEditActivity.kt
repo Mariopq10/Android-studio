@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
+
 class FilmEditActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film_edit)
@@ -15,7 +17,6 @@ class FilmEditActivity : AppCompatActivity() {
             val intent = Intent()
             intent.putExtra("Resultado",getString(R.string.resultFail))
             setResult(RESULT_CANCELED,intent)
-
             finish()
 
         }

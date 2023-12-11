@@ -55,14 +55,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="@string/capturaFoto" />
 
             <Button
                 android:id="@+id/buttonSeleccionImagen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="@string/seleccionaImagen" />
         </LinearLayout>
 
         <EditText
@@ -71,7 +71,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintTitulo"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/directorEditText"
@@ -79,7 +80,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintDirector"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/anoEditText"
@@ -87,7 +89,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintAno"
-            android:inputType="text" />
+            android:inputType="number"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/enlaceEditText"
@@ -95,17 +98,22 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintEnlace"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <Spinner
             android:id="@+id/spinnerGenero"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/genero"
+            android:minHeight="48dp" />
 
         <Spinner
             android:id="@+id/spinnerFormato"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/formato"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/comentarioEditText"
@@ -113,6 +121,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintComentarios"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,6 +31,17 @@
     <string name="hintAno">Año</string>
     <string name="hintEnlace">Enlace a IMDB</string>
     <string name="hintComentarios">Comentarios</string>
+    <string name="action">Acción</string>
+    <string name="Scifi">Ciencia ficción</string>
+    <string name="drama">Drama</string>
+    <string name="comedia">Comedia</string>
+    <string name="Terror">Terror</string>
+    <string name="dvd" translatable="false">DVD</string>
+    <string name="blueray" translatable="false">Blue-ray</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="capturaFoto">Captura Fotografía</string>
+    <string name="seleccionaImagen">Selecciona Imagen</string>
+
 
 
 

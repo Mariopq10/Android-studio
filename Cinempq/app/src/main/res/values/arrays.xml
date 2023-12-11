@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="genero">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>@string/action</item>
+        <item>@string/drama</item>
+        <item>@string/comedia</item>
+        <item>@string/Terror</item>
+        <item>@string/Scifi</item>
     </array>
 
     <array name="formato">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>@string/dvd</item>
+        <item>@string/blueray</item>
+        <item>@string/online</item>
     </array>
     
     
