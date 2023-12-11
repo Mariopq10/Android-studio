@@ -26,12 +26,8 @@ class FilmEditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film_edit)
 
-        val opcionesFormato = resources.getStringArray(R.array.formato)
-        val spinnerFormato = findViewById<Spinner>(R.id.spinnerFormato)
-        val adaptadorFormato = ArrayAdapter(this, android.R.layout.simple_spinner_item, opcionesFormato)
-        adaptadorFormato.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinnerFormato.adapter = adaptadorFormato
-        val seleccionFormato = spinnerFormato.selectedItem.toString()
+
+        val seleccionFormato = findViewById<Spinner>(R.id.spinnerFormato).selectedItem.toString()
 
         val tituloPelicula = findViewById<EditText>(R.id.tituloEditText)
 
@@ -40,8 +36,7 @@ class FilmEditActivity : AppCompatActivity() {
         // val anoPelicula = findViewById<EditText>(R.id.anoEditText)
         // val cartelPelicula = findViewById<ImageView>(R.id.imagenEdit)
 
-
-       // val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
+        // val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
 
         val buttonCancelEdit : Button = findViewById(R.id.cancelEditButton)
         buttonCancelEdit.setOnClickListener{
