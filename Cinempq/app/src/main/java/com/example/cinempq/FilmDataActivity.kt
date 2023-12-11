@@ -27,6 +27,17 @@ class FilmDataActivity : AppCompatActivity() {
             val data: Intent? = result.data
             val message = data?.getStringExtra("Resultado")
             if (result.resultCode == Activity.RESULT_OK) {
+                val nombre = data?.getStringExtra("nombrePelicula")
+                    findViewById<TextView>(R.id.tituloPelicula).text=nombre
+                val directorPelicula = data?.getStringExtra("directorPelicula")
+                    findViewById<TextView>(R.id.directorDefinicion).text = directorPelicula
+                val anoPelicula = data?.getStringExtra("anoPelicula")
+                    findViewById<TextView>(R.id.anoDefinicion).text = anoPelicula
+                //val cartelPelicula = findViewById<ImageView>(R.id.imageView)
+                //cartelPelicula.setImageResource(intent.getIntExtra("cartelPelicula",0))
+                val formatoPelicula = data?.getStringExtra("formatoPelicula")
+                    findViewById<TextView>(R.id.formatoPelicula).text = formatoPelicula
+                val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
