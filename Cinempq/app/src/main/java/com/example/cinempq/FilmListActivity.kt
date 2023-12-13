@@ -14,6 +14,7 @@ class FilmListActivity : AppCompatActivity() {
         val cartelPelicula=""
         val formatoPelicula=""
         val enlaceIMBD=""
+        val generoPelicula=""
     }
 
 
@@ -29,7 +30,8 @@ class FilmListActivity : AppCompatActivity() {
             intent.putExtra("nombrePelicula",getString(R.string.peliculaA))
             intent.putExtra("anoPelicula","1995")
             intent.putExtra("cartelPelicula",R.drawable.toystory)
-            intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaA))
+            intent.putExtra("formatoPelicula",getString(R.string.dvd))
+            intent.putExtra("generoPelicula",getString(R.string.comedia))
             intent.putExtra("enlaceIMDB","https://www.imdb.com/title/tt0114709/")
 
             startActivity(intent)
@@ -42,7 +44,8 @@ class FilmListActivity : AppCompatActivity() {
             intent.putExtra("nombrePelicula",getString(R.string.peliculaB))
             intent.putExtra("anoPelicula","1972")
             intent.putExtra("cartelPelicula",R.drawable.godfather)
-            intent.putExtra("formatoPelicula",getString(R.string.formatoPeliculaB))
+            intent.putExtra("formatoPelicula",getString(R.string.dvd))
+            intent.putExtra("generoPelicula",getString(R.string.drama))
             intent.putExtra("enlaceIMDB","https://www.imdb.com/title/tt0068646/")
 
             startActivity(intent)

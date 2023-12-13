@@ -19,6 +19,7 @@ class FilmDataActivity : AppCompatActivity() {
         val anoPelicula=""
         val cartelPelicula=""
         val formatoPelicula=""
+        val generoPelicula=""
         val enlaceIMBD=""
     }
 
@@ -33,11 +34,14 @@ class FilmDataActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.directorDefinicion).text = directorPelicula
                 val anoPelicula = data?.getStringExtra("anoPelicula")
                     findViewById<TextView>(R.id.anoDefinicion).text = anoPelicula
+                val generoPelicula = data?.getStringExtra("generoPelicula")
+                    findViewById<TextView>(R.id.generoPelicula).text = generoPelicula
                 //val cartelPelicula = findViewById<ImageView>(R.id.imageView)
                 //cartelPelicula.setImageResource(intent.getIntExtra("cartelPelicula",0))
                 val formatoPelicula = data?.getStringExtra("formatoPelicula")
                     findViewById<TextView>(R.id.formatoPelicula).text = formatoPelicula
-                val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
+                val enlaceIMDB = data?.getStringExtra("enlaceIMDB")
+
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -59,6 +63,8 @@ class FilmDataActivity : AppCompatActivity() {
         cartelPelicula.setImageResource(intent.getIntExtra("cartelPelicula",0))
         val formatoPelicula = findViewById<TextView>(R.id.formatoPelicula)
         formatoPelicula.text = intent.getStringExtra("formatoPelicula")
+        val generoPelicula = findViewById<TextView>(R.id.generoPelicula)
+        generoPelicula.text = intent.getStringExtra("generoPelicula")
         val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
 
 
@@ -72,7 +78,6 @@ class FilmDataActivity : AppCompatActivity() {
         val buttonFilmEdit : Button = findViewById(R.id.editFilmButton)
         buttonFilmEdit.setOnClickListener{
             var intentEdit = Intent(this,FilmEditActivity::class.java)
-
             resultadoOperacion.launch(intentEdit)
         }
 

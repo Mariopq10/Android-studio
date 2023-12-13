@@ -23,8 +23,8 @@
     <string name="resultFail">Operacion cancelada</string>
     <string name="directorPeliculaA">John Lasseter</string>
     <string name="directorPeliculaB">Francis Ford Coppola</string>
-    <string name="formatoPeliculaA">Animacion, Disney.</string>
-    <string name="formatoPeliculaB">Drama, Mafia</string>
+    <string name="generoPeliculaA">Animacion</string>
+    <string name="generoPeliculaB">Drama</string>
     <string name="hintNotas">Notas...</string>
     <string name="hintTitulo">Titulo de la pelicula</string>
     <string name="hintDirector">Nombre del director</string>

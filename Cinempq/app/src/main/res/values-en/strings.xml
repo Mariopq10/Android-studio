@@ -26,6 +26,8 @@
     <string name="formatoPeliculaB">Drama, Mafia</string>
     <string name="textViewDirector">Director</string>
     <string name="textViewAno">Year</string>
+    <string name="generoPeliculaA">Animation</string>
+    <string name="generoPeliculaB">Drama</string>
     <string name="hintNotas">Comments...</string>
     <string name="hintTitulo">Film Tittle</string>
     <string name="hintDirector">Director\'s name</string>

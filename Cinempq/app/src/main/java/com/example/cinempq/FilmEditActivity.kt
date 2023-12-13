@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
+import androidx.core.net.toUri
 
 
 class FilmEditActivity : AppCompatActivity() {
@@ -20,23 +21,22 @@ class FilmEditActivity : AppCompatActivity() {
         val cartelPelicula=""
         val formatoPelicula=""
         val enlaceIMBD=""
+        val generoPelicula=""
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_film_edit)
 
-
-        val seleccionFormato = findViewById<Spinner>(R.id.spinnerFormato).selectedItem.toString()
-
         val tituloPelicula = findViewById<EditText>(R.id.tituloEditText)
 
         var directorPelicula = findViewById<EditText>(R.id.directorEditText)
 
-        // val anoPelicula = findViewById<EditText>(R.id.anoEditText)
+        val anoPelicula = findViewById<EditText>(R.id.anoEditText)
+
+        val enlaceIMDB = findViewById<TextView>(R.id.enlaceEditText)
         // val cartelPelicula = findViewById<ImageView>(R.id.imagenEdit)
 
-        // val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
 
         val buttonCancelEdit : Button = findViewById(R.id.cancelEditButton)
         buttonCancelEdit.setOnClickListener{
@@ -51,12 +51,16 @@ class FilmEditActivity : AppCompatActivity() {
 
         val buttonSaveEdit : Button = findViewById(R.id.saveEditButton)
         buttonSaveEdit.setOnClickListener{
+            val seleccionFormato = findViewById<Spinner>(R.id.spinnerFormato).selectedItem.toString()
+            val seleccionGenero = findViewById<Spinner>(R.id.spinnerGenero).selectedItem.toString()
             val intent = Intent()
             intent.putExtra("Resultado",getString(R.string.resultOk))
             intent.putExtra("nombrePelicula",tituloPelicula.text.toString())
-            intent.putExtra("directorPelicula",""+directorPelicula.text)
-            intent.putExtra("anoPelicula",anoPelicula)
+            intent.putExtra("directorPelicula",directorPelicula.text.toString())
+            intent.putExtra("anoPelicula",anoPelicula.text.toString())
             intent.putExtra("formatoPelicula", seleccionFormato)
+            intent.putExtra("generoPelicula",seleccionGenero)
+            intent.putExtra("enlaceIMBD" ,enlaceIMDB.toString().toUri())
             setResult(RESULT_OK,intent)
 
             finish()
