@@ -22,8 +22,6 @@
     <string name="resultFail">Operation canceled</string>
     <string name="directorPeliculaA">John Lasseter</string>
     <string name="directorPeliculaB">Francis Ford Coppola</string>
-    <string name="formatoPeliculaA">Animation, Disney.</string>
-    <string name="formatoPeliculaB">Drama, Mafia</string>
     <string name="textViewDirector">Director</string>
     <string name="textViewAno">Year</string>
     <string name="generoPeliculaA">Animation</string>

@@ -33,7 +33,6 @@ class FilmListActivity : AppCompatActivity() {
             intent.putExtra("formatoPelicula",getString(R.string.dvd))
             intent.putExtra("generoPelicula",getString(R.string.comedia))
             intent.putExtra("enlaceIMDB","https://www.imdb.com/title/tt0114709/")
-
             startActivity(intent)
         }
 

@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.net.toUri
 
 class FilmDataActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class FilmDataActivity : AppCompatActivity() {
         val cartelPelicula=""
         val formatoPelicula=""
         val generoPelicula=""
-        val enlaceIMBD=""
+        val enlaceIMDB=""
     }
 
     private val resultadoOperacion =
@@ -68,6 +69,7 @@ class FilmDataActivity : AppCompatActivity() {
         val enlaceIMDB = intent.getStringExtra("enlaceIMDB")
 
 
+
         val buttonLinkIMDB : Button = findViewById(R.id.iMDBButton)
         buttonLinkIMDB.setOnClickListener{
             val uri = Uri.parse(enlaceIMDB)
@@ -78,6 +80,14 @@ class FilmDataActivity : AppCompatActivity() {
         val buttonFilmEdit : Button = findViewById(R.id.editFilmButton)
         buttonFilmEdit.setOnClickListener{
             var intentEdit = Intent(this,FilmEditActivity::class.java)
+            intentEdit.putExtra("nombrePelicula",tituloPelicula.text)
+            intentEdit.putExtra("directorPelicula",directorPelicula.text)
+            intentEdit.putExtra("anoPelicula",anoPelicula.text)
+            //intentEdit.putExtra("cartelPelicula",cartelPelicula.image)
+            intentEdit.putExtra("formatoPelicula",formatoPelicula.text)
+            intentEdit.putExtra("generoPelicula",generoPelicula.text)
+            //intentEdit.putExtra("enlaceIMDB",enlaceIMDB.text)
+
             resultadoOperacion.launch(intentEdit)
         }
 
