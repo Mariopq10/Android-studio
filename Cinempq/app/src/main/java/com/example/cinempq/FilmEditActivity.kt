@@ -35,16 +35,12 @@ class FilmEditActivity : AppCompatActivity() {
         val enlaceIMDB = findViewById<TextView>(R.id.enlaceEditText)*/
         // val cartelPelicula = findViewById<ImageView>(R.id.imagenEdit)
 
-
         val buttonCancelEdit : Button = findViewById(R.id.cancelEditButton)
         buttonCancelEdit.setOnClickListener{
             val intent = Intent()
             intent.putExtra("Resultado",getString(R.string.resultFail))
-
             setResult(RESULT_CANCELED,intent)
-
             finish()
-
         }
 
         val buttonSaveEdit : Button = findViewById(R.id.saveEditButton)
@@ -82,7 +78,6 @@ class FilmEditActivity : AppCompatActivity() {
             //intentEdit.putExtra("anoPelicula",anoPelicula.text.toString())
             //intentEdit.putExtra("enlaceIMBD" ,enlaceIMDB.toString().toUri())
             setResult(RESULT_OK,intentEdit)
-
             finish()
 
         }

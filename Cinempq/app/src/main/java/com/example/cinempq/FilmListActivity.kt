@@ -50,15 +50,12 @@ class FilmListActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
         val buttonInfo : Button = findViewById(R.id.showInfoButton)
         buttonInfo.setOnClickListener{
             val intent = Intent(this,AboutActivity::class.java)
 
             startActivity(intent)
         }
-
 
     }
 }
