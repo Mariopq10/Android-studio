@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 
@@ -11,16 +12,18 @@ class MainActivity : AppCompatActivity() {
     lateinit var editTextUser : EditText
     lateinit var editTextPass : EditText
     lateinit var buttonLogin : Button
+    lateinit var check : CheckBox
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         editTextUser  = findViewById(R.id.editTextUser)
         editTextPass  = findViewById(R.id.editTextPass)
+        check = findViewById(R.id.checkRememberUser)
         getValuesFromShared()
-
-
-    val buttonLogin : Button = findViewById<Button>(R.id.loginButton)
+        buttonLogin = findViewById(R.id.loginButton)
         buttonLogin.setOnClickListener{
+            showToast("Iniciando...")
             onClickLogin()
         }
 
@@ -31,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         editTextPass.text = SharedApplication.preferences.pass.toEditable()
     }
     private fun onClickLogin(){
-        if(checkRememberUser.isChecked){
+        if(check.isChecked){
             persistValues()
         }else{
             deleteValues()
@@ -39,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun persistValues(){
-        if(editTextUser.isEmpty() || editTextPass.text.isEmpty()){
+        if(editTextUser.text.isEmpty() || editTextPass.text.isEmpty()){
             showToast("Datos vacios")
         }else{
             SharedApplication.preferences.user = editTextUser.text.toString()
