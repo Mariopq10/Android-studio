@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.room.Database
 import androidx.room.Room
 
-class MyApp : Application {
+class MyApp : Application() {
     companion object {
         lateinit var database: LibroDatabase
     }
