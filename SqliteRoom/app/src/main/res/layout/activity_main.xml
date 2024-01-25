@@ -7,12 +7,33 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/tituloText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="25dp"
+        android:hint="Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="28dp" />
+
+    <EditText
+        android:id="@+id/autorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <EditText
+        android:id="@+id/nuevoTituloText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="*Nuevo titulo*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="132dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,29 +42,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="105dp">
+        tools:layout_editor_absoluteY="206dp">
 
         <Button
-            android:id="@+id/insertBtn"
-            android:layout_width="wrap_content"
+            android:id="@+id/insertButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Insert" />
 
         <Button
-            android:id="@+id/selectBtn"
-            android:layout_width="wrap_content"
+            android:id="@+id/selectButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select" />
 
         <Button
-            android:id="@+id/updateBtn"
+            android:id="@+id/updateButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Update" />
 
         <Button
-            android:id="@+id/deleteBtn"
-            android:layout_width="wrap_content"
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Delete" />
     </LinearLayout>

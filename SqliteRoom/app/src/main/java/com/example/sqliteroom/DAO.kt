@@ -1,4 +1,4 @@
-package com.example.sqlite
+package com.example.sqliteroom
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -11,22 +11,22 @@ import com.example.sqliteroom.Libro
 @Dao
 interface LibroDao {
 
-    //Operaciones asociadas a la clase User
+    //Operaciones asociadas a la clase Libro
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertUser(libro: Libro)
+    suspend fun insertLibro(libro: Libro)
 
-    @Query("UPDATE libros SET titulo = :newName, autor = :newEmail WHERE titulo = :oldName")
-    suspend fun updateUserName(oldName: String, newName: String, newEmail: String)
+    @Query("UPDATE libros SET titulo = :newTitulo, autor = :newAutor WHERE titulo = :oldTitulo")
+    suspend fun updateLibroTitulo(oldTitulo: String, newTitulo: String, newAutor: String)
 
-    @Query("DELETE FROM libros WHERE titulo = :name")
-    suspend fun deleteUserByName(titulo: String)
+    @Query("DELETE FROM libros WHERE titulo = :titulo")
+    suspend fun deleteLibroByTitulo(titulo: String)
 
-    @Query("SELECT * FROM libros WHERE titulo like :nombre LIMIT 1")
-    suspend fun getUserByName(nombre: String): List<Libro>
+    @Query("SELECT * FROM libros WHERE titulo like :titulo LIMIT 1")
+    suspend fun getLibroByTitulo(titulo: String): List<Libro>
 
     @Query("SELECT * FROM libros")
-    suspend fun getAllUsers(): List<Libro>
+    suspend fun getAllLibros(): List<Libro>
 
 
 }

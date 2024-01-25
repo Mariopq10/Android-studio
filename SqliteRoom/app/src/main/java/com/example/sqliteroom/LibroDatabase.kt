@@ -1,4 +1,4 @@
-package com.example.sqlite
+package com.example.sqliteroom
 
 import android.content.Context
 import androidx.room.Database
@@ -8,15 +8,15 @@ import com.example.sqliteroom.Libro
 
 
 @Database(entities = [Libro::class], version = 1)
-abstract class AppDatabase : RoomDatabase() {
+abstract class LibroDatabase : RoomDatabase() {
     abstract fun libroDao(): LibroDao
 
     //Objeto estático. No es necesario crear una isntancia de la clase
 
     companion object {
         @Volatile
-        private var instance: AppDatabase? = null
-        private val DBNAME = "us.db"
+        private var instance: LibroDatabase? = null
+        private val DBNAME = "libros.db"
         private val LOCK = Any()
 
         /**
@@ -29,10 +29,8 @@ abstract class AppDatabase : RoomDatabase() {
         }
 
         private fun buildDatabase(contexto: Context) = Room.databaseBuilder(
-            contexto, AppDatabase::class.java, DBNAME
+            contexto, LibroDatabase::class.java, DBNAME
         ).fallbackToDestructiveMigration().build()
-
-
 
     }
 }

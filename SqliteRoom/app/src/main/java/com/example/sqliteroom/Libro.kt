@@ -9,7 +9,6 @@ data class Libro (
     @PrimaryKey (autoGenerate = true)
     @ColumnInfo(name = "id")
     val id: Long = 0,
-
     @ColumnInfo(name = "titulo")
     val titulo: String,
     @ColumnInfo(name = "autor")

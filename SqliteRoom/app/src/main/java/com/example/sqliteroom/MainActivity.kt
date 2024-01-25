@@ -1,19 +1,13 @@
-package com.example.sqlite
+package com.example.sqliteroom
 
-import android.content.Context
-import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.room.Room.databaseBuilder
-import com.example.sqliteroom.Libro
-import com.example.sqliteroom.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.sql.SQLException
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,105 +15,81 @@ class MainActivity : AppCompatActivity() {
     //Variables
 
     private lateinit var texto: TextView
-    private lateinit var libroDao: AppDatabase
-    private lateinit var btnInsert: Button
-    private lateinit var btnSelect: Button
-    private lateinit var btnUpdate: Button
-    private lateinit var btnDelete: Button
-    private lateinit var nombre: EditText
-    private lateinit var email: EditText
-    private lateinit var nombreUpdate: EditText
+    private lateinit var libroDao: LibroDatabase
+    private lateinit var insertButton: Button
+    private lateinit var selectButton: Button
+    private lateinit var updateButton: Button
+    private lateinit var deleteButton: Button
+    private lateinit var tituloText: EditText
+    private lateinit var autorText: EditText
+    private lateinit var tituloUpdateText: EditText
 
-    /**
-     * Función para limpiar los campos EditText
-     */
-
+    //Funcion que elimina cadenas de texto de los campos.
     private fun limpiar() {
-
-        nombre.setText("")
-        email.setText("")
-        nombreUpdate.setText("")
-
+        tituloText.setText("")
+        autorText.setText("")
+        tituloUpdateText.setText("")
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        texto = findViewById(R.id.textView)
-        btnInsert = findViewById(R.id.btnInsert)
-        btnSelect = findViewById(R.id.btnSelect)
-        btnUpdate = findViewById(R.id.btnUpdate)
-        btnDelete = findViewById(R.id.btnDelete)
-        libroDao = AppDatabase(this)
-        nombre = findViewById(R.id.nombre)
-        email = findViewById(R.id.email)
-        nombreUpdate = findViewById(R.id.nuevoNombre)
+
+        //texto = findViewById(R.id.tituloText)
+        insertButton = findViewById(R.id.insertButton)
+        selectButton = findViewById(R.id.selectButton)
+        updateButton = findViewById(R.id.updateButton)
+        deleteButton = findViewById(R.id.deleteButton)
+        libroDao = LibroDatabase(this)
+
+        tituloText = findViewById(R.id.tituloText)
+        autorText = findViewById(R.id.autorText)
+        tituloUpdateText = findViewById(R.id.nuevoTituloText)
 
 
-        /**
-         * Botón insert
-         */
-
-        btnInsert.setOnClickListener() {
+        // Implementacion de la lógica de los button y sus acciones.
+        // Insert Button.
+        insertButton.setOnClickListener() {
             CoroutineScope(Dispatchers.IO).launch {
-
                 libroDao.libroDao()
-                    .insertUser(Libro(titulo = nombre.text.toString(), autor = email.text.toString()))
-
+                    .insertLibro(Libro(titulo = tituloText.text.toString(), autor = autorText.text.toString()))
             }
+           // limpiar()
         }
 
-        /**
-         * Botón select
-         */
-
-        btnSelect.setOnClickListener() {
+        //Select Button
+        selectButton.setOnClickListener() {
             CoroutineScope(Dispatchers.IO).launch {
-
-                texto.text = libroDao.libroDao().getUserByName(nombre.text.toString()).toString()
+                texto.text = libroDao.libroDao().getLibroByTitulo(tituloText.text.toString()).toString()
 
             }
-
-
+           // limpiar()
         }
 
-        /**
-         * Botón update
-         */
-
-        btnUpdate.setOnClickListener() {
-
+        //Update button
+        updateButton.setOnClickListener() {
             CoroutineScope(Dispatchers.IO).launch {
-
-               libroDao.libroDao().updateUserName(
-                    nombreUpdate.text.toString(),
-                    nombre.text.toString(),
-                    email.text.toString()
+               libroDao.libroDao().updateLibroTitulo(
+                    tituloUpdateText.text.toString(),
+                    tituloText.text.toString(),
+                    autorText.text.toString()
                 )
-
-
             }
-
-
+           // limpiar()
         }
 
-
-        /**
-         * Botón delete
-         */
-
-        btnDelete.setOnClickListener() {
+        //Delete Button
+        deleteButton.setOnClickListener() {
 
             CoroutineScope(Dispatchers.IO).launch {
 
-                libroDao.libroDao().deleteUserByTitulo(nombreUpdate.text.toString())
+                libroDao.libroDao().deleteLibroByTitulo(tituloUpdateText.text.toString())
 
             }
-
         }
+        //limpiar()
     }
 }
 
