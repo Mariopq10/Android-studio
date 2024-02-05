@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.edicionmultimedia.R
 import java.io.File
 
-class VideoPlayerActivity : AppCompatActivity() {
+class VideoPlayerActivity2 : AppCompatActivity() {
 
     private lateinit var videoView: VideoView
 
