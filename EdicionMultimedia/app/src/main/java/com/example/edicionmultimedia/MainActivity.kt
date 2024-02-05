@@ -12,14 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        val buttonAudio = findViewById<Button>(R.id.buttonAudio)
+        buttonAudio.setOnClickListener{
+            val audioActivity = Intent(this, AudioActivity::class.java)
+            startActivity(audioActivity)
+        }
         val buttonVideo = findViewById<Button>(R.id.buttonVideo)
         buttonVideo.setOnClickListener {
-            val videoView = Intent(this, VideoPlayerActivity2::class.java)
+            val videoView = Intent(this, VideoActivity::class.java)
             startActivity(videoView)
-    }
-
-
+        }
 
     }
 }
