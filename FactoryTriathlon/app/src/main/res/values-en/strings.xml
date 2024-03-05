@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Factory Triathlon</string>
+    <string name="icono">icon</string>
+    <string name="txtEmail">Email</string>
+    <string name="pass">Password</string>
+    <string name="iniciarSesion">Log in</string>
+    <string name="registrarse">Sign up</string>
+    <string name="bienvenido">Welcome to Factory Triathlon</string>
+    <string name="nombre">Name</string>
+    <string name="apellidos">Last Name</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Password</string>
+    <string name="fechaNacimiento">Date of Birth</string>
+    <string name="cambiar">Change</string>
+    <string name="cambiarFoto">Change Photo</string>
+    <string name="telefono">Phone</string>
+    <string name="ajustes">Settings</string>
+    <string name="perfil">My Profile</string>
+    <string name="profesionales">Our Professionals</string>
+    <string name="clases">Classes</string>
+    <string name="tienesQueRellenar">This field is required</string>
+    <string name="usurioRegistradoExito">User registered successfully</string>
+    <string name="encabezado">header</string>
+    <string name="mis_datos_personales">My Personal Information</string>
+    <string name="actualizar_datos">Update Information</string>
+    <string name="actualizar_contrase_a">Update Password</string>
+    <string name="cambiar_imagen">Change Image</string>
+    <string name="permisosCamara">To change the image, accept the camera permissions</string>
+    <string name="ingles">English</string>
+    <string name="español">Spanish</string>
+    <string name="frances">French</string>
+    <string name="politicas" translatable="false">Accept Privacy Policies</string>
+    <string name="ale" translatable="false">Ale</string>
+    <string name="luna" translatable="false">Luna</string>
+    <string name="alicia" translatable="false">Alicia</string>
+    <string name="celia" translatable="false">Celia</string>
+    <string name="reservaDenegada">That date has already passed</string>
+    <string name="reserva">Reservation</string>
+    <string name="anaadir">Add</string>
+    <string name="borrar">Delete</string>
+    <string name="aceptar">Accept</string>
+    <string name="fecha">Date</string>
+    <string name="actualizar">Update</string>
+    <string name="reservar">Book</string>
+    <string name="reservado">Reserved</string>
+    <string name="eligeIdioma">Choose Language for the APP</string>
+    <string name="idiomas">Languages</string>
+    <string name="seleccionaIdioma">Select language</string>
+    <string name="instagram">Our Instagram</string>
+    <string name="encuentranos">Find us Here!</string>
+    <string name="reservaBorrada">Reservation deleted</string>
+    <string name="yateniasunareserva">You already had a reservation here</string>
+    <string name="reservalista">Reservation ready</string>
+    <string name="reiniciaLaApp">Restart the app to see the changes.</string>
+</resources>

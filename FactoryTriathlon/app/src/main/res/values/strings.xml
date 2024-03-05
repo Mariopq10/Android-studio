@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Factory Triathlon</string>
+    <string name="icono">icono</string>
+    <string name="txtEmail">Email</string>
+    <string name="pass">Contraseña</string>
+    <string name="iniciarSesion">Inicia Sesion</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="bienvenido">Bienvenido a Factory Triathlon</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="fechaNacimiento">Fecha de Nacimiento</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="cambiarFoto">Cambiar Foto</string>
+    <string name="telefono">Telefono</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="perfil">Mi Perfil</string>
+    <string name="profesionales">Nuestros Profesionales</string>
+    <string name="clases">Clases</string>
+    <string name="tienesQueRellenar">Este campo es obligatorio</string>
+    <string name="usurioRegistradoExito">usuario registrado cone éxito</string>
+    <string name="encabezado">encabezado</string>
+    <string name="mis_datos_personales">Mis Datos Personales</string>
+    <string name="actualizar_datos">Actualizar datos</string>
+    <string name="actualizar_contrase_a">Actualizar Contraseña</string>
+    <string name="cambiar_imagen">Cambiar imagen</string>
+    <string name="permisosCamara">Para cambiar la imagen acepta los permisos de la camara</string>
+    <string name="ingles">Ingles</string>
+    <string name="español">Español</string>
+    <string name="frances">Frances</string>
+    <string name="politicas" translatable="false">Aceptar Políticas de privacidad</string>
+    <string name="ale" translatable="false">Ale</string>
+    <string name="luna" translatable="false">Luna</string>
+    <string name="alicia" translatable="false">Alicia</string>
+    <string name="celia" translatable="false">Celia</string>
+    <string name="reservaDenegada">Ya ha pasado esa fecha</string>
+    <string name="reserva">Reserva</string>
+    <string name="anaadir">Añadir</string>
+    <string name="borrar">borrar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="fecha">Fecha</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="reservar">Reservar</string>
+    <string name="reservado">Reservado</string>
+    <string name="eligeIdioma">Elige Idioma Para la APP</string>
+    <string name="idiomas">Idiomas</string>
+    <string name="seleccionaIdioma">Selecciona el idioma</string>
+    <string name="instagram">Nuestro Instagram</string>
+    <string name="encuentranos">¡ Encuantranos Aquí !</string>
+    <string name="reservaBorrada">Reserva borrada</string>
+    <string name="yateniasunareserva">Ya tenias una reserva aqui</string>
+    <string name="reservalista">Reserva lista</string>
+    <string name="reiniciaLaApp">Reinicia la App para ver los cambios</string>
+
+</resources>

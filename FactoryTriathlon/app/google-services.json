@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265909550229",
+    "project_id": "factory-triathlon-a96d3",
+    "storage_bucket": "factory-triathlon-a96d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265909550229:android:3166834c41d1b659336f9c",
+        "android_client_info": {
+          "package_name": "com.example.factorytriathlon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265909550229-5s6ajfo3akarnpr5p2g1v2vklal6ifg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqc6wk6monZXoTEheL_lESHLy-YXrw61s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265909550229-5s6ajfo3akarnpr5p2g1v2vklal6ifg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

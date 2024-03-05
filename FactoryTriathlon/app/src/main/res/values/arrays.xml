@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arrayIdioma">
+        <item>@string/español</item>
+        <item>@string/ingles</item>
+        <item>@string/frances</item>
+    </array>
+
+<array name="profes">
+    <item>@string/ale</item>
+    <item>@string/luna</item>
+    <item>@string/alicia</item>
+    <item>@string/celia</item>
+</array>
+
+
+
+</resources>
