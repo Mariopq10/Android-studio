@@ -1,11 +1,11 @@
-package com.example.todolisttutorial
+package com.example.todolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.todolisttutorial.databinding.ActivityMainBinding
+import com.example.todolist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), TaskItemClickListener
 {

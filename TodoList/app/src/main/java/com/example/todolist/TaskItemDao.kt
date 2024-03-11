@@ -1,4 +1,4 @@
-package com.example.todolisttutorial
+package com.example.todolist
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow

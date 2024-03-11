@@ -1,4 +1,4 @@
-package com.example.todolisttutorial
+package com.example.todolist
 
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
